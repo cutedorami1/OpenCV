@@ -17,6 +17,9 @@ for i in range(5):
 # 무선 카메라를 사용할 때: 카메라의 무선 IP 스트리밍 주소를 직접 입력
 ex) self.cap = cv2.VideoCapture("rtsp://192.168.0.10:554/stream")
 
+# 좌우 반전 문제 해결하는 법
+def show_camera(self): 함수에서 frame = cv2.flip(frame, 1) 코드를 주석 처리 or 삭제
+
 
 # 실행할 때 필요한 것
 1. python, OpenCV, pillow가 설치 되어있어야 함
